@@ -1,0 +1,7 @@
+title: 成大資工 Wiki
+description: NCKU CSIE course pages, mirrored from the CSIE wiki
+url: https://sysprog21.github.io
+baseurl: /arch
+repo: https://github.com/sysprog21/arch
+wiki: https://wiki.csie.ncku.edu.tw
+exclude: [sync.sh, csiewiki, README.md]

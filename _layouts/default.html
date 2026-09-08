@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/bootstrap-responsive.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/custom.css' | relative_url }}" rel="stylesheet" media="screen, projection" type="text/css">
+    <link href="{{ '/assets/css/print.css' | relative_url }}" rel="stylesheet" media="print" type="text/css">
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="sidebar">
+        <!-- ponytail: the wiki navbar without its collapse JS; the links that
+             survive are the ones a static mirror can actually serve. -->
+        <div id="navbar" class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="brand" href="{{ site.wiki }}/">成大資工 Wiki</a>
+              <ul class="nav">
+                <li><a href="{{ site.wiki }}{{ page.wiki }}">Wiki 版本</a></li>
+                <li><a href="{{ site.repo }}">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <div id="content">
+          <h1 class="pageTitle"><a href="{{ site.wiki }}{{ page.wiki }}">{{ page.title }}</a></h1>
+          {{ content }}
+        </div>
+        <div id="footer" class="container">
+          <div id="license">
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW">創用 CC 姓名標示-相同方式分享 3.0 台灣</a> 授權
+          </div>
+          <ul>
+            <li>Mirrored from <a href="{{ site.wiki }}{{ page.wiki }}">成大資工 Wiki</a></li>
+            <li>Last synced {{ site.time | date: "%Y-%m-%d" }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
