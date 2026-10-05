@@ -1,20 +1,25 @@
 #!/usr/bin/env bash
 # Mirror pages from the CSIE wiki data repo into Jekyll pages.
 set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
 RAW=https://raw.githubusercontent.com/NCKUCSIE-Wiki/csiewiki-wikidata/refs/heads/main
 WIKI=https://wiki.csie.ncku.edu.tw
 INTRO='https://docs.google.com/presentation/d/1RwBZQDAgg0DRADH1lk06y4LEMcB1d_uYni_g2hK9mEA/edit?usp=sharing'
 
 # mirror <wiki path> <output file> <permalink>
-mirror() {
+mirror() (
     local tmp
     tmp=$(mktemp "$2.XXXXXX")
     trap 'rm -f "$tmp"' EXIT
 
-    curl -fsSL "$RAW/$1.page" |
+    curl -fsSL --retry 3 --connect-timeout 15 --max-time 120 "$RAW/$1.page" |
     # The wiki closes its front matter with "..."; Jekyll insists on "---".
     awk -v source="$1.page" -v wiki="/$1" -v link="$3" '
+        NR == 1 && $0 != "---" {
+            print source ": missing YAML front-matter opener" > "/dev/stderr"
+            exit 1
+        }
         NR > 1 && !done && /^\.\.\.$/ {
             print "layout: default"
             print "permalink: " link
@@ -40,8 +45,7 @@ mirror() {
 
     chmod 644 "$tmp"
     mv "$tmp" "$2"
-    trap - EXIT
-}
+)
 
 mkdir -p User
 mirror arch/schedule index.md /
