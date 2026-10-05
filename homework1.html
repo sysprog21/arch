@@ -1,0 +1,49 @@
+---
+permalink: /homework1.html
+---
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homework 1 — minirubik forks</title>
+  <style>
+    body { font: 1rem/1.6 system-ui, sans-serif; max-width: 70rem; margin: auto; padding: 1.5rem; color: #202020; }
+    a { color: #0759a4; }
+    input, select { font: inherit; padding: .5rem; width: 100%; box-sizing: border-box; margin-bottom: 1rem; }
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: .5rem; border-bottom: 1px solid #ddd; text-align: left; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <nav><a href="{{ '/' | relative_url }}">課程首頁</a> · <a href="https://github.com/sysprog21/minirubik">minirubik</a></nav>
+  <h1>Homework 1：fork 瀏覽與選取</h1>
+  <p>輸入 GitHub 帳號的開頭字母，再從選單選取 fork。比對不區分大小寫；下方清單會同步篩選。</p>
+  <p>列表更新時間：<time>{{ site.data.homework1.updated_at | escape }}</time>（UTC）</p>
+  <label for="prefix">GitHub 帳號開頭</label>
+  <input id="prefix" type="search" placeholder="例如：js" autocomplete="off" spellcheck="false" aria-controls="fork-picker fork-list">
+  <label for="fork-picker">選取 fork</label>
+  <select id="fork-picker"><option value="">請選取帳號 / repository</option></select>
+  <p id="matches" role="status" aria-live="polite"></p>
+  <p><a id="selected" hidden>開啟選取的 fork</a></p>
+  <noscript>啟用 JavaScript 即可依帳號篩選；也可直接使用下方完整清單。</noscript>
+  <div class="table-wrap">
+    <table>
+      <caption>minirubik forks</caption>
+      <thead><tr><th scope="col">帳號</th><th scope="col">Repository</th><th scope="col">最近 push（UTC）</th></tr></thead>
+      <tbody id="fork-list">
+        {% for fork in site.data.homework1.forks %}
+        <tr data-owner="{{ fork.owner | escape }}">
+          <td>{{ fork.owner | escape }}</td>
+          <td><a href="{{ fork.url | escape }}">{{ fork.repository | escape }}</a></td>
+          <td>{{ fork.pushed_at | default: '—' | escape }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <script src="{{ '/assets/js/homework1.js' | relative_url }}" defer></script>
+</body>
+</html>

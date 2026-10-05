@@ -4,4 +4,4 @@ url: https://sysprog21.github.io
 baseurl: /arch
 repo: https://github.com/sysprog21/arch
 wiki: https://wiki.csie.ncku.edu.tw
-exclude: [sync.sh, tests, csiewiki, README.md]
+exclude: [sync.sh, homework1.sh, tests, csiewiki, README.md]

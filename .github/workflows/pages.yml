@@ -22,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 tests/test_sync.py
+      - run: python3 tests/test_homework1.py && node tests/test_homework1.js
       - run: ./sync.sh
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
