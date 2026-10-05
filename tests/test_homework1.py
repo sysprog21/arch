@@ -12,8 +12,28 @@ with tempfile.TemporaryDirectory() as directory:
     repo.mkdir()
     shutil.copy2(Path(__file__).resolve().parents[1] / 'homework1.sh', repo)
     gh = root / 'gh'
-    gh.write_text('#!/bin/sh\nprintf "%s\\n" "$*" >> "$CALLS"\n'
-                  'cat "$FIXTURE"\nexit "${API_STATUS:-0}"\n')
+    gh.write_text('''#!/usr/bin/env python3
+import json, os, sys
+with open(os.environ['CALLS'], 'a') as calls:
+    calls.write(' '.join(sys.argv[1:]) + '\\n')
+endpoint = next(arg for arg in sys.argv if arg.startswith('repos/'))
+if '/forks?' in endpoint:
+    print(open(os.environ['FIXTURE']).read())
+    sys.exit(int(os.environ.get('API_STATUS', '0')))
+if os.environ.get('BRANCH_STATUS') == '1':
+    sys.exit(1)
+if endpoint.endswith('/commits/main'):
+    print(json.dumps({'sha': 'upstream'}))
+elif '/branches?' in endpoint:
+    owner = endpoint.split('/')[1]
+    sha = {'zebra': 'ahead', 'behind': 'behind', 'diverged': 'diverged'}.get(owner, 'upstream')
+    # Alice has an unchanged main but an updated branch on the second page.
+    print(json.dumps([[{'name': 'main', 'commit': {'sha': sha}}],
+                      [{'name': 'feature/test', 'commit': {'sha': 'ahead' if owner == 'Alice' else sha}}]]))
+else:
+    sha = endpoint.split('...')[1]
+    print(json.dumps({'ahead_by': {'ahead': 1, 'behind': 0, 'diverged': 2}[sha]}))
+''')
     gh.chmod(0o755)
     git = root / 'git'
     git.write_text('#!/bin/sh\nprintf "%s\\n" "$*" >> "$CALLS"\n'
@@ -25,8 +45,8 @@ with tempfile.TemporaryDirectory() as directory:
                FIXTURE=str(fixture), CALLS=str(calls))
     forks = [dict(owner=dict(login=owner), full_name=f'{owner}/minirubik',
                   html_url=f'https://github.com/{owner}/minirubik', pushed_at=None)
-             for owner in ['zebra', 'Alice']]
-    fixture.write_text(json.dumps([[forks[0]], [forks[1]]]))
+             for owner in ['zebra', 'Alice', 'behind', 'diverged', 'same']]
+    fixture.write_text(json.dumps([forks[:1], forks[1:]]))
 
     def run(*args):
         return subprocess.run([str(repo / 'homework1.sh'), *args],
@@ -36,11 +56,19 @@ with tempfile.TemporaryDirectory() as directory:
     assert result.returncode == 0, result.stderr
     datafile = repo / '_data/homework1.json'
     data = json.loads(datafile.read_text())
-    assert [f['owner'] for f in data['forks']] == ['Alice', 'zebra']
+    assert [f['owner'] for f in data['forks']] == ['Alice', 'behind', 'diverged', 'same', 'zebra']
+    assert {f['owner']: f['has_updates'] for f in data['forks']} == {
+        'Alice': True, 'behind': False, 'diverged': True, 'same': False, 'zebra': True}
+    assert data['upstream_sha'] == 'upstream'
+    assert calls.read_text().count('/compare/upstream...ahead') == 1
     assert '--paginate --slurp' in calls.read_text()
     assert 'per_page=100&sort=oldest' in calls.read_text()
     assert 'push origin main' not in calls.read_text()
     original = datafile.read_text()
+    env['BRANCH_STATUS'] = '1'
+    assert run('--update-only').returncode != 0
+    assert datafile.read_text() == original
+    del env['BRANCH_STATUS']
     for content, status in [('[]', '22'), ('{}', '0'),
                             ('[[{"owner":{"login":"x"}}]]', '0')]:
         fixture.write_text(content)

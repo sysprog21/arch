@@ -17,7 +17,7 @@ function filterForks() {
     }
   }
   picker.disabled = count === 0;
-  document.getElementById('matches').textContent = `符合 ${count} / 共 ${rows.length} 個 fork`;
+  document.getElementById('matches').textContent = `${count} matching / ${rows.length} total forks`;
 }
 
 prefix.addEventListener('input', filterForks);
@@ -25,7 +25,7 @@ picker.addEventListener('change', () => {
   selected.hidden = !picker.value;
   if (picker.value) {
     selected.href = picker.value;
-    selected.textContent = `開啟 ${picker.selectedOptions[0].textContent}`;
+    selected.textContent = `Open ${picker.selectedOptions[0].textContent}`;
   }
 });
 filterForks();

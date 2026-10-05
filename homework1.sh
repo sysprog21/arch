@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Refresh every minirubik fork and publish through the existing Pages workflow.
-# Requires authenticated gh, jq, and git. --update-only skips committing/publishing.
+# Requires authenticated gh, jq, python3, and git. --update-only skips publishing.
 set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
@@ -31,6 +31,38 @@ gh api --hostname github.com --paginate --slurp \
                     (.repository | startswith($fork.owner + "/"))) then
             {updated_at: $updated_at, forks: sort_by(.owner | ascii_downcase)}
         else error("Invalid fork metadata") end' > "$tmp"
+python3 - "$tmp" <<'PY'
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+def api(endpoint, paginate=False):
+    args = ['gh', 'api', '--hostname', 'github.com', endpoint]
+    if paginate:
+        args += ['--paginate', '--slurp']
+    return json.loads(subprocess.check_output(args, text=True))
+
+path = Path(sys.argv[1])
+data = json.loads(path.read_text())
+base = api('repos/sysprog21/minirubik/commits/main')['sha']
+data['upstream_sha'] = base
+ahead = {base: False}
+for index, fork in enumerate(data['forks'], 1):
+    pages = api(f"repos/{fork['repository']}/branches?per_page=100", paginate=True)
+    fork['has_updates'] = False
+    for page in pages:
+        for branch in page:
+            sha = branch['commit']['sha']
+            if sha not in ahead:
+                comparison = api(f'repos/sysprog21/minirubik/compare/{base}...{sha}')
+                ahead[sha] = comparison['ahead_by'] > 0
+            if ahead[sha]:
+                fork['has_updates'] = True
+    if index % 10 == 0 or index == len(data['forks']):
+        print(f"Checked branches: {index}/{len(data['forks'])}", file=sys.stderr)
+path.write_text(json.dumps(data, indent=2) + '\n')
+PY
 chmod 644 "$tmp"
 mv "$tmp" _data/homework1.json
 

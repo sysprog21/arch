@@ -1,719 +1,839 @@
 {
-  "updated_at": "2026-10-05T17:32:09Z",
+  "updated_at": "2026-10-05T17:38:55Z",
   "forks": [
     {
       "owner": "0111jyh",
       "repository": "0111jyh/minirubik",
       "url": "https://github.com/0111jyh/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "ahhhh71828",
       "repository": "ahhhh71828/minirubik",
       "url": "https://github.com/ahhhh71828/minirubik",
-      "pushed_at": "2026-10-05T17:02:03Z"
+      "pushed_at": "2026-10-05T17:02:03Z",
+      "has_updates": true
     },
     {
       "owner": "alexyen1006",
       "repository": "alexyen1006/minirubik",
       "url": "https://github.com/alexyen1006/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "allen-0416",
       "repository": "allen-0416/minirubik",
       "url": "https://github.com/allen-0416/minirubik",
-      "pushed_at": "2026-10-05T15:22:24Z"
+      "pushed_at": "2026-10-05T15:22:24Z",
+      "has_updates": true
     },
     {
       "owner": "amao10",
       "repository": "amao10/minirubik",
       "url": "https://github.com/amao10/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "ascodeasice",
       "repository": "ascodeasice/minirubik",
       "url": "https://github.com/ascodeasice/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "bangyou0912",
       "repository": "bangyou0912/minirubik",
       "url": "https://github.com/bangyou0912/minirubik",
-      "pushed_at": "2026-10-05T06:39:29Z"
+      "pushed_at": "2026-10-05T06:39:29Z",
+      "has_updates": true
     },
     {
       "owner": "baozilla0326",
       "repository": "baozilla0326/minirubik",
       "url": "https://github.com/baozilla0326/minirubik",
-      "pushed_at": "2026-10-05T13:04:08Z"
+      "pushed_at": "2026-10-05T13:04:08Z",
+      "has_updates": true
     },
     {
       "owner": "bbblueibb",
       "repository": "bbblueibb/minirubik",
       "url": "https://github.com/bbblueibb/minirubik",
-      "pushed_at": "2026-10-05T14:35:51Z"
+      "pushed_at": "2026-10-05T14:35:51Z",
+      "has_updates": true
     },
     {
       "owner": "Bigtooth123",
       "repository": "Bigtooth123/minirubik",
       "url": "https://github.com/Bigtooth123/minirubik",
-      "pushed_at": "2026-10-05T16:51:18Z"
+      "pushed_at": "2026-10-05T16:51:18Z",
+      "has_updates": true
     },
     {
       "owner": "Billy0232337",
       "repository": "Billy0232337/minirubik",
       "url": "https://github.com/Billy0232337/minirubik",
-      "pushed_at": "2026-10-05T05:24:35Z"
+      "pushed_at": "2026-10-05T05:24:35Z",
+      "has_updates": true
     },
     {
       "owner": "bo-zhi-07",
       "repository": "bo-zhi-07/minirubik",
       "url": "https://github.com/bo-zhi-07/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Caseylu2000",
       "repository": "Caseylu2000/minirubik",
       "url": "https://github.com/Caseylu2000/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "CHEN-YOU-0331",
       "repository": "CHEN-YOU-0331/minirubik",
       "url": "https://github.com/CHEN-YOU-0331/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "chenIsAvailable",
       "repository": "chenIsAvailable/minirubik",
       "url": "https://github.com/chenIsAvailable/minirubik",
-      "pushed_at": "2026-10-05T08:27:03Z"
+      "pushed_at": "2026-10-05T08:27:03Z",
+      "has_updates": true
     },
     {
       "owner": "chenyu50",
       "repository": "chenyu50/minirubik",
       "url": "https://github.com/chenyu50/minirubik",
-      "pushed_at": "2026-10-05T12:28:04Z"
+      "pushed_at": "2026-10-05T12:28:04Z",
+      "has_updates": true
     },
     {
       "owner": "chiencheng12",
       "repository": "chiencheng12/minirubik",
       "url": "https://github.com/chiencheng12/minirubik",
-      "pushed_at": "2026-10-05T16:23:31Z"
+      "pushed_at": "2026-10-05T16:23:31Z",
+      "has_updates": true
     },
     {
       "owner": "Chihhhs",
       "repository": "Chihhhs/minirubik",
       "url": "https://github.com/Chihhhs/minirubik",
-      "pushed_at": "2026-10-04T13:39:10Z"
+      "pushed_at": "2026-10-04T13:39:10Z",
+      "has_updates": true
     },
     {
       "owner": "CJChuangx",
       "repository": "CJChuangx/minirubik",
       "url": "https://github.com/CJChuangx/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "codin-noob",
       "repository": "codin-noob/minirubik",
       "url": "https://github.com/codin-noob/minirubik",
-      "pushed_at": "2026-10-04T06:05:58Z"
+      "pushed_at": "2026-10-04T06:05:58Z",
+      "has_updates": true
     },
     {
       "owner": "creeper94666",
       "repository": "creeper94666/minirubik",
       "url": "https://github.com/creeper94666/minirubik",
-      "pushed_at": "2026-10-05T12:41:44Z"
+      "pushed_at": "2026-10-05T12:41:44Z",
+      "has_updates": true
     },
     {
       "owner": "da267388",
       "repository": "da267388/minirubik",
       "url": "https://github.com/da267388/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "ddc0330",
       "repository": "ddc0330/minirubik",
       "url": "https://github.com/ddc0330/minirubik",
-      "pushed_at": "2026-10-05T16:23:06Z"
+      "pushed_at": "2026-10-05T16:23:06Z",
+      "has_updates": true
     },
     {
       "owner": "DennisLee03",
       "repository": "DennisLee03/minirubik",
       "url": "https://github.com/DennisLee03/minirubik",
-      "pushed_at": "2026-10-02T02:17:56Z"
+      "pushed_at": "2026-10-02T02:17:56Z",
+      "has_updates": false
     },
     {
       "owner": "dges5202",
       "repository": "dges5202/minirubik",
       "url": "https://github.com/dges5202/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Doeshen",
       "repository": "Doeshen/minirubik",
       "url": "https://github.com/Doeshen/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Eason0111",
       "repository": "Eason0111/minirubik",
       "url": "https://github.com/Eason0111/minirubik",
-      "pushed_at": "2026-10-04T15:17:41Z"
+      "pushed_at": "2026-10-04T15:17:41Z",
+      "has_updates": true
     },
     {
       "owner": "Edison1019",
       "repository": "Edison1019/minirubik",
       "url": "https://github.com/Edison1019/minirubik",
-      "pushed_at": "2026-09-28T14:34:26Z"
+      "pushed_at": "2026-09-28T14:34:26Z",
+      "has_updates": true
     },
     {
       "owner": "Ericchenbang",
       "repository": "Ericchenbang/minirubik",
       "url": "https://github.com/Ericchenbang/minirubik",
-      "pushed_at": "2026-10-04T02:49:29Z"
+      "pushed_at": "2026-10-04T02:49:29Z",
+      "has_updates": false
     },
     {
       "owner": "EricHuang0302",
       "repository": "EricHuang0302/minirubik",
       "url": "https://github.com/EricHuang0302/minirubik",
-      "pushed_at": "2026-10-05T08:14:57Z"
+      "pushed_at": "2026-10-05T08:14:57Z",
+      "has_updates": true
     },
     {
       "owner": "Evan-1212",
       "repository": "Evan-1212/minirubik",
       "url": "https://github.com/Evan-1212/minirubik",
-      "pushed_at": "2026-10-05T17:17:39Z"
+      "pushed_at": "2026-10-05T17:17:39Z",
+      "has_updates": true
     },
     {
       "owner": "explosion3975",
       "repository": "explosion3975/minirubik",
       "url": "https://github.com/explosion3975/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "fabcd131253",
       "repository": "fabcd131253/minirubik",
       "url": "https://github.com/fabcd131253/minirubik",
-      "pushed_at": "2026-10-04T18:46:46Z"
+      "pushed_at": "2026-10-04T18:46:46Z",
+      "has_updates": true
     },
     {
       "owner": "FakeWood",
       "repository": "FakeWood/minirubik",
       "url": "https://github.com/FakeWood/minirubik",
-      "pushed_at": "2026-10-05T12:38:26Z"
+      "pushed_at": "2026-10-05T12:38:26Z",
+      "has_updates": true
     },
     {
       "owner": "ga13234624",
       "repository": "ga13234624/minirubik",
       "url": "https://github.com/ga13234624/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "ggyy0822",
       "repository": "ggyy0822/minirubik",
       "url": "https://github.com/ggyy0822/minirubik",
-      "pushed_at": "2026-10-05T13:48:34Z"
+      "pushed_at": "2026-10-05T13:48:34Z",
+      "has_updates": true
     },
     {
       "owner": "gy0719",
       "repository": "gy0719/minirubik",
       "url": "https://github.com/gy0719/minirubik",
-      "pushed_at": "2026-10-05T15:41:31Z"
+      "pushed_at": "2026-10-05T15:41:31Z",
+      "has_updates": true
     },
     {
       "owner": "hankliuliu",
       "repository": "hankliuliu/minirubik",
       "url": "https://github.com/hankliuliu/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "haruuu1214",
       "repository": "haruuu1214/minirubik",
       "url": "https://github.com/haruuu1214/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "hcscnhu0110",
       "repository": "hcscnhu0110/minirubik",
       "url": "https://github.com/hcscnhu0110/minirubik",
-      "pushed_at": "2026-10-04T18:15:41Z"
+      "pushed_at": "2026-10-04T18:15:41Z",
+      "has_updates": true
     },
     {
       "owner": "HellHBBD",
       "repository": "HellHBBD/minirubik",
       "url": "https://github.com/HellHBBD/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "henrylee1003",
       "repository": "henrylee1003/minirubik",
       "url": "https://github.com/henrylee1003/minirubik",
-      "pushed_at": "2026-10-05T12:46:41Z"
+      "pushed_at": "2026-10-05T12:46:41Z",
+      "has_updates": true
     },
     {
       "owner": "Hoyenting",
       "repository": "Hoyenting/minirubik",
       "url": "https://github.com/Hoyenting/minirubik",
-      "pushed_at": "2026-10-05T15:23:28Z"
+      "pushed_at": "2026-10-05T15:23:28Z",
+      "has_updates": true
     },
     {
       "owner": "Hsieh-HC",
       "repository": "Hsieh-HC/minirubik",
       "url": "https://github.com/Hsieh-HC/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "iannight10412",
       "repository": "iannight10412/minirubik",
       "url": "https://github.com/iannight10412/minirubik",
-      "pushed_at": "2026-10-01T06:13:18Z"
+      "pushed_at": "2026-10-01T06:13:18Z",
+      "has_updates": true
     },
     {
       "owner": "ilian5210",
       "repository": "ilian5210/minirubik",
       "url": "https://github.com/ilian5210/minirubik",
-      "pushed_at": "2026-10-03T06:39:09Z"
+      "pushed_at": "2026-10-03T06:39:09Z",
+      "has_updates": true
     },
     {
       "owner": "illdoCc",
       "repository": "illdoCc/minirubik",
       "url": "https://github.com/illdoCc/minirubik",
-      "pushed_at": "2026-10-05T14:04:19Z"
+      "pushed_at": "2026-10-05T14:04:19Z",
+      "has_updates": true
     },
     {
       "owner": "ivan125126",
       "repository": "ivan125126/minirubik",
       "url": "https://github.com/ivan125126/minirubik",
-      "pushed_at": "2026-10-05T11:19:50Z"
+      "pushed_at": "2026-10-05T11:19:50Z",
+      "has_updates": true
     },
     {
       "owner": "JackChang92318",
       "repository": "JackChang92318/minirubik",
       "url": "https://github.com/JackChang92318/minirubik",
-      "pushed_at": "2026-10-04T17:45:34Z"
+      "pushed_at": "2026-10-04T17:45:34Z",
+      "has_updates": true
     },
     {
       "owner": "Jadepypy",
       "repository": "Jadepypy/minirubik",
       "url": "https://github.com/Jadepypy/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "jeremylu0830",
       "repository": "jeremylu0830/minirubik",
       "url": "https://github.com/jeremylu0830/minirubik",
-      "pushed_at": "2026-10-04T14:19:38Z"
+      "pushed_at": "2026-10-04T14:19:38Z",
+      "has_updates": true
     },
     {
       "owner": "Jerry-Chiang-23",
       "repository": "Jerry-Chiang-23/minirubik",
       "url": "https://github.com/Jerry-Chiang-23/minirubik",
-      "pushed_at": "2026-10-05T16:38:36Z"
+      "pushed_at": "2026-10-05T16:38:36Z",
+      "has_updates": true
     },
     {
       "owner": "jerryboy1031",
       "repository": "jerryboy1031/myMinirubik",
       "url": "https://github.com/jerryboy1031/myMinirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "jianjian0504",
       "repository": "jianjian0504/minirubik",
       "url": "https://github.com/jianjian0504/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "jkjkjoock2",
       "repository": "jkjkjoock2/minirubik",
       "url": "https://github.com/jkjkjoock2/minirubik",
-      "pushed_at": "2026-10-04T13:32:04Z"
+      "pushed_at": "2026-10-04T13:32:04Z",
+      "has_updates": true
     },
     {
       "owner": "jkl341349",
       "repository": "jkl341349/minirubik",
       "url": "https://github.com/jkl341349/minirubik",
-      "pushed_at": "2026-10-02T07:35:07Z"
+      "pushed_at": "2026-10-02T07:35:07Z",
+      "has_updates": true
     },
     {
       "owner": "joejoe0613",
       "repository": "joejoe0613/minirubik",
       "url": "https://github.com/joejoe0613/minirubik",
-      "pushed_at": "2026-10-02T13:51:56Z"
+      "pushed_at": "2026-10-02T13:51:56Z",
+      "has_updates": true
     },
     {
       "owner": "Kaicheng1014",
       "repository": "Kaicheng1014/minirubik_ComputerArch",
       "url": "https://github.com/Kaicheng1014/minirubik_ComputerArch",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "karen9330",
       "repository": "karen9330/minirubik",
       "url": "https://github.com/karen9330/minirubik",
-      "pushed_at": "2026-10-05T09:00:56Z"
+      "pushed_at": "2026-10-05T09:00:56Z",
+      "has_updates": true
     },
     {
       "owner": "kevin20031015",
       "repository": "kevin20031015/minirubik",
       "url": "https://github.com/kevin20031015/minirubik",
-      "pushed_at": "2026-10-05T08:33:12Z"
+      "pushed_at": "2026-10-05T08:33:12Z",
+      "has_updates": true
     },
     {
       "owner": "Kevin526-cmd",
       "repository": "Kevin526-cmd/minirubik",
       "url": "https://github.com/Kevin526-cmd/minirubik",
-      "pushed_at": "2026-10-04T14:15:02Z"
+      "pushed_at": "2026-10-04T14:15:02Z",
+      "has_updates": true
     },
     {
       "owner": "kevinjone25",
       "repository": "kevinjone25/minirubik",
       "url": "https://github.com/kevinjone25/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "KolamGH",
       "repository": "KolamGH/minirubik",
       "url": "https://github.com/KolamGH/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "Leo1180401",
       "repository": "Leo1180401/minirubik",
       "url": "https://github.com/Leo1180401/minirubik",
-      "pushed_at": "2026-10-05T11:06:22Z"
+      "pushed_at": "2026-10-05T11:06:22Z",
+      "has_updates": true
     },
     {
       "owner": "LJer-LCW",
       "repository": "LJer-LCW/minirubik",
       "url": "https://github.com/LJer-LCW/minirubik",
-      "pushed_at": "2026-10-05T16:17:11Z"
+      "pushed_at": "2026-10-05T17:37:51Z",
+      "has_updates": true
     },
     {
       "owner": "mato8q",
       "repository": "mato8q/minirubik",
       "url": "https://github.com/mato8q/minirubik",
-      "pushed_at": "2026-10-05T17:16:59Z"
+      "pushed_at": "2026-10-05T17:16:59Z",
+      "has_updates": true
     },
     {
       "owner": "matthiola0",
       "repository": "matthiola0/minirubik",
       "url": "https://github.com/matthiola0/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "melonpuff",
       "repository": "melonpuff/minirubik",
       "url": "https://github.com/melonpuff/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "moon-jam",
       "repository": "moon-jam/minirubik",
       "url": "https://github.com/moon-jam/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "N26151902",
       "repository": "N26151902/minirubik",
       "url": "https://github.com/N26151902/minirubik",
-      "pushed_at": "2026-10-05T07:34:53Z"
+      "pushed_at": "2026-10-05T07:34:53Z",
+      "has_updates": true
     },
     {
       "owner": "n26151952",
       "repository": "n26151952/minirubik",
       "url": "https://github.com/n26151952/minirubik",
-      "pushed_at": "2026-10-04T08:07:49Z"
+      "pushed_at": "2026-10-04T08:07:49Z",
+      "has_updates": true
     },
     {
       "owner": "Nomask-CHY",
       "repository": "Nomask-CHY/minirubik",
       "url": "https://github.com/Nomask-CHY/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "NutNut17",
       "repository": "NutNut17/minirubik",
       "url": "https://github.com/NutNut17/minirubik",
-      "pushed_at": "2026-10-04T14:03:37Z"
+      "pushed_at": "2026-10-04T14:03:37Z",
+      "has_updates": true
     },
     {
       "owner": "OdenBlack",
       "repository": "OdenBlack/minirubik",
       "url": "https://github.com/OdenBlack/minirubik",
-      "pushed_at": "2026-10-04T18:53:20Z"
+      "pushed_at": "2026-10-04T18:53:20Z",
+      "has_updates": true
     },
     {
       "owner": "p76141063-beep",
       "repository": "p76141063-beep/minirubik",
       "url": "https://github.com/p76141063-beep/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "p76151262",
       "repository": "p76151262/minirubik",
       "url": "https://github.com/p76151262/minirubik",
-      "pushed_at": "2026-09-29T06:08:05Z"
+      "pushed_at": "2026-09-29T06:08:05Z",
+      "has_updates": false
     },
     {
       "owner": "Patriciaath999",
       "repository": "Patriciaath999/minirubik",
       "url": "https://github.com/Patriciaath999/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Pei-Cheng-Yu",
       "repository": "Pei-Cheng-Yu/minirubik",
       "url": "https://github.com/Pei-Cheng-Yu/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "PeteChiang1211",
       "repository": "PeteChiang1211/minirubik",
       "url": "https://github.com/PeteChiang1211/minirubik",
-      "pushed_at": "2026-10-05T06:44:49Z"
+      "pushed_at": "2026-10-05T06:44:49Z",
+      "has_updates": true
     },
     {
       "owner": "PinkNekoFist",
       "repository": "PinkNekoFist/minirubik",
       "url": "https://github.com/PinkNekoFist/minirubik",
-      "pushed_at": "2026-10-03T06:48:18Z"
+      "pushed_at": "2026-10-03T06:48:18Z",
+      "has_updates": false
     },
     {
       "owner": "Ray0116",
       "repository": "Ray0116/minirubik",
       "url": "https://github.com/Ray0116/minirubik",
-      "pushed_at": "2026-10-05T12:49:58Z"
+      "pushed_at": "2026-10-05T12:49:58Z",
+      "has_updates": true
     },
     {
       "owner": "Ray891220",
       "repository": "Ray891220/minirubik",
       "url": "https://github.com/Ray891220/minirubik",
-      "pushed_at": "2026-10-05T17:13:16Z"
+      "pushed_at": "2026-10-05T17:13:16Z",
+      "has_updates": true
     },
     {
       "owner": "reinaldoyang",
       "repository": "reinaldoyang/minirubik",
       "url": "https://github.com/reinaldoyang/minirubik",
-      "pushed_at": "2026-10-01T15:20:35Z"
+      "pushed_at": "2026-10-01T15:20:35Z",
+      "has_updates": true
     },
     {
       "owner": "richard81115",
       "repository": "richard81115/minirubik",
       "url": "https://github.com/richard81115/minirubik",
-      "pushed_at": "2026-10-05T09:25:13Z"
+      "pushed_at": "2026-10-05T09:25:13Z",
+      "has_updates": true
     },
     {
       "owner": "roger8877",
       "repository": "roger8877/minirubik",
       "url": "https://github.com/roger8877/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Rohitvgupta15",
       "repository": "Rohitvgupta15/minirubik",
       "url": "https://github.com/Rohitvgupta15/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "roywatermelon11370",
       "repository": "roywatermelon11370/minirubik",
       "url": "https://github.com/roywatermelon11370/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "ruiyang0630",
       "repository": "ruiyang0630/minirubik",
       "url": "https://github.com/ruiyang0630/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Sam7202",
       "repository": "Sam7202/minirubik",
       "url": "https://github.com/Sam7202/minirubik",
-      "pushed_at": "2026-10-04T05:50:56Z"
+      "pushed_at": "2026-10-04T05:50:56Z",
+      "has_updates": true
     },
     {
       "owner": "shiannnn",
       "repository": "shiannnn/minirubik",
       "url": "https://github.com/shiannnn/minirubik",
-      "pushed_at": "2026-10-05T16:28:06Z"
+      "pushed_at": "2026-10-05T16:28:06Z",
+      "has_updates": true
     },
     {
       "owner": "SpC242",
       "repository": "SpC242/minirubik",
       "url": "https://github.com/SpC242/minirubik",
-      "pushed_at": "2026-09-30T07:47:38Z"
+      "pushed_at": "2026-09-30T07:47:38Z",
+      "has_updates": false
     },
     {
       "owner": "sukiyaki29",
       "repository": "sukiyaki29/minirubik",
       "url": "https://github.com/sukiyaki29/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "tim123xyz",
       "repository": "tim123xyz/minirubik",
       "url": "https://github.com/tim123xyz/minirubik",
-      "pushed_at": "2026-10-05T14:48:02Z"
+      "pushed_at": "2026-10-05T14:48:02Z",
+      "has_updates": true
     },
     {
       "owner": "todoroki0910",
       "repository": "todoroki0910/minirubik",
       "url": "https://github.com/todoroki0910/minirubik",
-      "pushed_at": "2026-10-05T15:23:11Z"
+      "pushed_at": "2026-10-05T15:23:11Z",
+      "has_updates": true
     },
     {
       "owner": "tsengcat",
       "repository": "tsengcat/minirubik",
       "url": "https://github.com/tsengcat/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "tung-chou",
       "repository": "tung-chou/minirubik",
       "url": "https://github.com/tung-chou/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "twchang-csie",
       "repository": "twchang-csie/minirubik",
       "url": "https://github.com/twchang-csie/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "Urdan0117",
       "repository": "Urdan0117/minirubik",
       "url": "https://github.com/Urdan0117/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "Vickyy2525",
       "repository": "Vickyy2525/minirubik",
       "url": "https://github.com/Vickyy2525/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "W3iii",
       "repository": "W3iii/minirubik",
       "url": "https://github.com/W3iii/minirubik",
-      "pushed_at": "2026-10-05T17:11:04Z"
+      "pushed_at": "2026-10-05T17:11:04Z",
+      "has_updates": true
     },
     {
       "owner": "weiqoop",
       "repository": "weiqoop/minirubik",
       "url": "https://github.com/weiqoop/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "weiso131",
       "repository": "weiso131/minirubik",
       "url": "https://github.com/weiso131/minirubik",
-      "pushed_at": "2026-10-05T14:58:23Z"
+      "pushed_at": "2026-10-05T14:58:23Z",
+      "has_updates": true
     },
     {
       "owner": "weizhen1733",
       "repository": "weizhen1733/minirubik",
       "url": "https://github.com/weizhen1733/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "Wennm0110",
       "repository": "Wennm0110/minirubik",
       "url": "https://github.com/Wennm0110/minirubik",
-      "pushed_at": "2026-10-05T13:52:26Z"
+      "pushed_at": "2026-10-05T13:52:26Z",
+      "has_updates": true
     },
     {
       "owner": "WilfredLin",
       "repository": "WilfredLin/minirubik",
       "url": "https://github.com/WilfredLin/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "WilllllWang",
       "repository": "WilllllWang/minirubik",
       "url": "https://github.com/WilllllWang/minirubik",
-      "pushed_at": "2026-10-05T14:11:40Z"
+      "pushed_at": "2026-10-05T14:11:40Z",
+      "has_updates": true
     },
     {
       "owner": "wtzeng1203",
       "repository": "wtzeng1203/minirubik",
       "url": "https://github.com/wtzeng1203/minirubik",
-      "pushed_at": "2026-10-05T15:21:25Z"
+      "pushed_at": "2026-10-05T15:21:25Z",
+      "has_updates": true
     },
     {
       "owner": "Wu-1127",
       "repository": "Wu-1127/minirubik",
       "url": "https://github.com/Wu-1127/minirubik",
-      "pushed_at": "2026-10-05T08:57:25Z"
+      "pushed_at": "2026-10-05T08:57:25Z",
+      "has_updates": true
     },
     {
       "owner": "x29740736x",
       "repository": "x29740736x/minirubik",
       "url": "https://github.com/x29740736x/minirubik",
-      "pushed_at": "2026-10-05T09:58:25Z"
+      "pushed_at": "2026-10-05T09:58:25Z",
+      "has_updates": true
     },
     {
       "owner": "xalestar",
       "repository": "xalestar/minirubik",
       "url": "https://github.com/xalestar/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "yang94080-cloud",
       "repository": "yang94080-cloud/minirubik",
       "url": "https://github.com/yang94080-cloud/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "yc518suray",
       "repository": "yc518suray/minirubik",
       "url": "https://github.com/yc518suray/minirubik",
-      "pushed_at": "2026-10-05T07:00:46Z"
+      "pushed_at": "2026-10-05T07:00:46Z",
+      "has_updates": true
     },
     {
       "owner": "yenslife",
       "repository": "yenslife/minirubik",
       "url": "https://github.com/yenslife/minirubik",
-      "pushed_at": "2026-10-05T06:26:01Z"
+      "pushed_at": "2026-10-05T06:26:01Z",
+      "has_updates": true
     },
     {
       "owner": "yhsindev",
       "repository": "yhsindev/minirubik",
       "url": "https://github.com/yhsindev/minirubik",
-      "pushed_at": "2026-10-05T03:26:20Z"
+      "pushed_at": "2026-10-05T03:26:20Z",
+      "has_updates": true
     },
     {
       "owner": "yisyuantsai",
       "repository": "yisyuantsai/minirubik",
       "url": "https://github.com/yisyuantsai/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     },
     {
       "owner": "yoruStarfish",
       "repository": "yoruStarfish/minirubik",
       "url": "https://github.com/yoruStarfish/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "YTing46",
       "repository": "YTing46/minirubik",
       "url": "https://github.com/YTing46/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "yukuan0722",
       "repository": "yukuan0722/minirubik",
       "url": "https://github.com/yukuan0722/minirubik",
-      "pushed_at": "2026-09-21T23:21:55Z"
+      "pushed_at": "2026-09-21T23:21:55Z",
+      "has_updates": false
     },
     {
       "owner": "zzzheng212",
       "repository": "zzzheng212/minirubik",
       "url": "https://github.com/zzzheng212/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z"
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
     }
-  ]
+  ],
+  "upstream_sha": "231796cc48868f4ea276f652139b6bebbad0cd02"
 }

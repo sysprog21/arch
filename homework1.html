@@ -2,7 +2,7 @@
 permalink: /homework1.html
 ---
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,26 +18,27 @@ permalink: /homework1.html
   </style>
 </head>
 <body>
-  <nav><a href="{{ '/' | relative_url }}">課程首頁</a> · <a href="https://github.com/sysprog21/minirubik">minirubik</a></nav>
-  <h1>Homework 1：fork 瀏覽與選取</h1>
-  <p>輸入 GitHub 帳號的開頭字母，再從選單選取 fork。比對不區分大小寫；下方清單會同步篩選。</p>
-  <p>列表更新時間：<time>{{ site.data.homework1.updated_at | escape }}</time>（UTC）</p>
-  <label for="prefix">GitHub 帳號開頭</label>
-  <input id="prefix" type="search" placeholder="例如：js" autocomplete="off" spellcheck="false" aria-controls="fork-picker fork-list">
-  <label for="fork-picker">選取 fork</label>
-  <select id="fork-picker"><option value="">請選取帳號 / repository</option></select>
+  <nav><a href="{{ '/' | relative_url }}">Course home</a> · <a href="https://github.com/sysprog21/minirubik">minirubik</a></nav>
+  <h1>Homework 1: Browse and select forks</h1>
+  <p>Enter the first letters of a GitHub username, then select a fork. Matching is case-insensitive; the table uses the same filter.</p>
+  <p><strong>*</strong> marks a repository whose main or another branch has commits not present in upstream main. Repositories that are only behind upstream are not marked.</p>
+  <p>Last updated: <time>{{ site.data.homework1.updated_at | escape }}</time> (UTC)</p>
+  <label for="prefix">GitHub username prefix</label>
+  <input id="prefix" type="search" placeholder="e.g. js" autocomplete="off" spellcheck="false" aria-controls="fork-picker fork-list">
+  <label for="fork-picker">Select a fork</label>
+  <select id="fork-picker"><option value="">Choose a username / repository</option></select>
   <p id="matches" role="status" aria-live="polite"></p>
-  <p><a id="selected" hidden>開啟選取的 fork</a></p>
-  <noscript>啟用 JavaScript 即可依帳號篩選；也可直接使用下方完整清單。</noscript>
+  <p><a id="selected" hidden>Open selected fork</a></p>
+  <noscript>Enable JavaScript to filter by username, or browse the full list below.</noscript>
   <div class="table-wrap">
     <table>
       <caption>minirubik forks</caption>
-      <thead><tr><th scope="col">帳號</th><th scope="col">Repository</th><th scope="col">最近 push（UTC）</th></tr></thead>
+      <thead><tr><th scope="col">Username</th><th scope="col">Repository</th><th scope="col">Last push (UTC)</th></tr></thead>
       <tbody id="fork-list">
         {% for fork in site.data.homework1.forks %}
         <tr data-owner="{{ fork.owner | escape }}">
           <td>{{ fork.owner | escape }}</td>
-          <td><a href="{{ fork.url | escape }}">{{ fork.repository | escape }}</a></td>
+          <td><a href="{{ fork.url | escape }}">{{ fork.repository | escape }}{% if fork.has_updates %} *{% endif %}</a></td>
           <td>{{ fork.pushed_at | default: '—' | escape }}</td>
         </tr>
         {% endfor %}
