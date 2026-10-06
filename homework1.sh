@@ -33,6 +33,7 @@ gh api --hostname github.com --paginate --slurp \
         else error("Invalid fork metadata") end' > "$tmp"
 python3 - "$tmp" <<'PY'
 import json
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import subprocess
 import sys
@@ -47,20 +48,23 @@ path = Path(sys.argv[1])
 data = json.loads(path.read_text())
 base = api('repos/sysprog21/minirubik/commits/main')['sha']
 data['upstream_sha'] = base
-ahead = {base: False}
-for index, fork in enumerate(data['forks'], 1):
+def branch_shas(fork):
     pages = api(f"repos/{fork['repository']}/branches?per_page=100", paginate=True)
-    fork['has_updates'] = False
-    for page in pages:
-        for branch in page:
-            sha = branch['commit']['sha']
-            if sha not in ahead:
-                comparison = api(f'repos/sysprog21/minirubik/compare/{base}...{sha}')
-                ahead[sha] = comparison['ahead_by'] > 0
-            if ahead[sha]:
-                fork['has_updates'] = True
-    if index % 10 == 0 or index == len(data['forks']):
-        print(f"Checked branches: {index}/{len(data['forks'])}", file=sys.stderr)
+    return {branch['commit']['sha'] for page in pages for branch in page}
+
+def has_updates(sha):
+    comparison = api(f'repos/sysprog21/minirubik/compare/{base}...{sha}?per_page=1')
+    return comparison['ahead_by'] > 0
+
+with ThreadPoolExecutor(max_workers=8) as pool:
+    branches = list(pool.map(branch_shas, data['forks']))
+    unique_shas = sorted(set().union(*branches) - {base})
+    print(f'Checked {len(branches)} forks; comparing {len(unique_shas)} unique commits',
+          file=sys.stderr)
+    ahead = dict(zip(unique_shas, pool.map(has_updates, unique_shas)))
+ahead[base] = False
+for fork, shas in zip(data['forks'], branches):
+    fork['has_updates'] = any(ahead[sha] for sha in shas)
 path.write_text(json.dumps(data, indent=2) + '\n')
 PY
 chmod 644 "$tmp"

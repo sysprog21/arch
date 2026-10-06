@@ -20,7 +20,9 @@ endpoint = next(arg for arg in sys.argv if arg.startswith('repos/'))
 if '/forks?' in endpoint:
     print(open(os.environ['FIXTURE']).read())
     sys.exit(int(os.environ.get('API_STATUS', '0')))
-if os.environ.get('BRANCH_STATUS') == '1':
+if '/branches?' in endpoint and os.environ.get('BRANCH_STATUS') == '1':
+    sys.exit(1)
+if '/compare/' in endpoint and os.environ.get('COMPARE_STATUS') == '1':
     sys.exit(1)
 if endpoint.endswith('/commits/main'):
     print(json.dumps({'sha': 'upstream'}))
@@ -31,7 +33,7 @@ elif '/branches?' in endpoint:
     print(json.dumps([[{'name': 'main', 'commit': {'sha': sha}}],
                       [{'name': 'feature/test', 'commit': {'sha': 'ahead' if owner == 'Alice' else sha}}]]))
 else:
-    sha = endpoint.split('...')[1]
+    sha = endpoint.split('...')[1].split('?')[0]
     print(json.dumps({'ahead_by': {'ahead': 1, 'behind': 0, 'diverged': 2}[sha]}))
 ''')
     gh.chmod(0o755)
@@ -61,14 +63,21 @@ else:
         'Alice': True, 'behind': False, 'diverged': True, 'same': False, 'zebra': True}
     assert data['upstream_sha'] == 'upstream'
     assert calls.read_text().count('/compare/upstream...ahead') == 1
+    comparisons = [line for line in calls.read_text().splitlines() if '/compare/' in line]
+    assert len(comparisons) == 3  # Shared SHAs are compared once, even across workers.
+    assert all('?per_page=1' in line for line in comparisons)
+    assert calls.read_text().count('/branches?per_page=100') == len(forks)
     assert '--paginate --slurp' in calls.read_text()
     assert 'per_page=100&sort=oldest' in calls.read_text()
     assert 'push origin main' not in calls.read_text()
     original = datafile.read_text()
-    env['BRANCH_STATUS'] = '1'
-    assert run('--update-only').returncode != 0
-    assert datafile.read_text() == original
-    del env['BRANCH_STATUS']
+    for failure in ['BRANCH_STATUS', 'COMPARE_STATUS']:
+        env[failure] = '1'
+        assert run('--update-only').returncode != 0
+        assert datafile.read_text() == original
+        assert not list(datafile.parent.glob('homework1.json.*'))
+        assert 'push origin main' not in calls.read_text()
+        del env[failure]
     for content, status in [('[]', '22'), ('{}', '0'),
                             ('[[{"owner":{"login":"x"}}]]', '0')]:
         fixture.write_text(content)
