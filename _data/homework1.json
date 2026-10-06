@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T18:11:09Z",
+  "updated_at": "2026-10-06T01:01:13Z",
   "forks": [
     {
       "owner": "0111jyh",
@@ -68,7 +68,7 @@
       "owner": "Bigtooth123",
       "repository": "Bigtooth123/minirubik",
       "url": "https://github.com/Bigtooth123/minirubik",
-      "pushed_at": "2026-10-05T16:51:18Z",
+      "pushed_at": "2026-10-05T18:18:20Z",
       "has_updates": true
     },
     {
@@ -89,6 +89,13 @@
       "owner": "Caseylu2000",
       "repository": "Caseylu2000/minirubik",
       "url": "https://github.com/Caseylu2000/minirubik",
+      "pushed_at": "2026-09-28T17:01:41Z",
+      "has_updates": false
+    },
+    {
+      "owner": "CharlieZhangXY",
+      "repository": "CharlieZhangXY/minirubik",
+      "url": "https://github.com/CharlieZhangXY/minirubik",
       "pushed_at": "2026-09-28T17:01:41Z",
       "has_updates": false
     },
@@ -201,8 +208,8 @@
       "owner": "Ericchenbang",
       "repository": "Ericchenbang/minirubik",
       "url": "https://github.com/Ericchenbang/minirubik",
-      "pushed_at": "2026-10-04T02:49:29Z",
-      "has_updates": false
+      "pushed_at": "2026-10-05T20:27:23Z",
+      "has_updates": true
     },
     {
       "owner": "EricHuang0302",
@@ -250,7 +257,7 @@
       "owner": "ggyy0822",
       "repository": "ggyy0822/minirubik",
       "url": "https://github.com/ggyy0822/minirubik",
-      "pushed_at": "2026-10-05T13:48:34Z",
+      "pushed_at": "2026-10-05T19:39:08Z",
       "has_updates": true
     },
     {
@@ -278,7 +285,7 @@
       "owner": "hcscnhu0110",
       "repository": "hcscnhu0110/minirubik",
       "url": "https://github.com/hcscnhu0110/minirubik",
-      "pushed_at": "2026-10-04T18:15:41Z",
+      "pushed_at": "2026-10-05T19:01:15Z",
       "has_updates": true
     },
     {
@@ -341,7 +348,7 @@
       "owner": "JackChang92318",
       "repository": "JackChang92318/minirubik",
       "url": "https://github.com/JackChang92318/minirubik",
-      "pushed_at": "2026-10-04T17:45:34Z",
+      "pushed_at": "2026-10-05T18:40:30Z",
       "has_updates": true
     },
     {
@@ -362,7 +369,7 @@
       "owner": "Jerry-Chiang-23",
       "repository": "Jerry-Chiang-23/minirubik",
       "url": "https://github.com/Jerry-Chiang-23/minirubik",
-      "pushed_at": "2026-10-05T16:38:36Z",
+      "pushed_at": "2026-10-05T20:31:27Z",
       "has_updates": true
     },
     {
@@ -572,7 +579,7 @@
       "owner": "Ray891220",
       "repository": "Ray891220/minirubik",
       "url": "https://github.com/Ray891220/minirubik",
-      "pushed_at": "2026-10-05T17:13:16Z",
+      "pushed_at": "2026-10-05T19:16:17Z",
       "has_updates": true
     },
     {
@@ -663,8 +670,8 @@
       "owner": "tsengcat",
       "repository": "tsengcat/minirubik",
       "url": "https://github.com/tsengcat/minirubik",
-      "pushed_at": "2026-09-28T17:01:41Z",
-      "has_updates": false
+      "pushed_at": "2026-10-06T00:37:46Z",
+      "has_updates": true
     },
     {
       "owner": "tung-chou",
